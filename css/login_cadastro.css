@@ -31,7 +31,7 @@ body{
 
 }
 ::-webkit-input-placeholder { /* Edge */
-    color: rgb(255, 255, 255);
+    color: var(--branco);
     font-weight: bolder;
     font-size: smaller;
   }
@@ -69,4 +69,13 @@ a:hover{
     border-radius: 35px;
     width: 35%;
     font-size: 15px;
+}
+.insert:focus{
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    color: var(--branco);
+}
+.inputs{
+    width: 21em;
 }

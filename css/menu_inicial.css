@@ -1,14 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
-body, html{
-    font-family: 'Raleway', sans-serif;
-}
-body{
-    width: 100%;
-    height: auto;
-    background-image: linear-gradient(var(--azul_claro_dg_escuro), var(--azul_escuro_dg_escuro), var(--azul_escuro_dg_escuro), var(--azul_claro_dg_escuro));
-    background-size: contain; /*cover*/
-    background-repeat: no-repeat;
-}
 /*MENU - NAVBAR*/
 #header{
     width: 100%;
@@ -16,7 +5,13 @@ body{
     transition: background ease-out .2s;
     border-top: 0px;
 }
+#header .navbar-collapse{
+    width: auto;
 
+}
+p{
+    margin-bottom: 0;
+}
 #header .nav-link{
     color: black;
     text-align: center;
@@ -28,15 +23,11 @@ body{
 #header .nav-link:hover{
     background-image: linear-gradient(var(--azul_escuro_dg_claro), var(--azul_claro_dg_claro));
     color: rgb(255, 255, 255);
-    transform: scale(1.2); 
-}
-
-#usuario{
-    width: 30px;
+    transform: scale(1.25); 
 }
 
 
-/*.entrar{
+.entrar{
     background-image: linear-gradient(to right, var(--azul_escuro_dg_claro), var(--azul_claro_dg_claro));
     color: rgb(255, 255, 255);
     border: 0;
@@ -50,8 +41,7 @@ body{
 .entrar:hover{
     filter: brightness(95%);
     transform: scale(1.07);
-    color: var(--branco);
-}*/
+}
 .img_prop path{
     fill:#fff;
 }
@@ -70,6 +60,12 @@ body{
     #header #link-home{
         margin-top: 0.8rem;
     }  
+    #header #lista-vantagens{
+        margin-bottom: 0.8rem;
+    }    
+    #header #link-vantagens{
+        margin-right: 0;
+    }  
 
     #header .nav-link{
         padding-top: 0.5rem;
@@ -83,6 +79,11 @@ body{
     #header .nav-link p, img{
         display: inline-block;
         margin: auto;
+    }
+}
+@media (max-width: 991.98px) { 
+    #img_sobre{
+        width: 21em;
     }
 }
 @media (max-width: 575px) {

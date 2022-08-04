@@ -11,7 +11,7 @@
 <body>
     <section class="mx-auto">
         <div class="position-absolute mt-5 ms-5">
-            <a href="index.php">
+            <a href="http://localhost/Programa%C3%A7%C3%A3o/index.php">
                 <img src="assets/Seta_esquerda.png" alt="" srcset="">
             </a>
         </div>
@@ -27,13 +27,17 @@
                         <div  class="align-self-center ms-3 me-3">
                             <img src="assets/Email.png" alt="" srcset="">
                         </div>
-                        <input type="text" class="form-control insert" placeholder="Email" aria-label="Username" aria-describedby="addon-wrapping">
+                        <input type="email" class="form-control insert" placeholder="Email" aria-label="Username" aria-describedby="addon-wrapping">
+
                     </div>
-                    <div class="input-group flex-nowrap inputs" data-bs-toggle="tooltip" data-bs-title="Your password must be 8-20 characters long, contain letters, numbers and special characters." data-bs-trigger="focus" >
+                    <div class="input-group flex-nowrap inputs" data-bs-toggle="tooltip" data-bs-title="Sua senha deve conter 8-20 caracteres, letras, números e caracteres especiais." data-bs-trigger="focus" >
                         <div  class="align-self-center ms-3 me-3">
                             <img src="assets/Cadeado.png" alt="" srcset="">
                         </div>
                         <input type="password" class="form-control insert" id="senha"  placeholder="Senha" aria-label="Username" aria-describedby="addon-wrapping">
+                        <div class="valid-feedback">
+                            Looks good!
+                          </div>
                         <div class="align-self-center ms-3 me-3" >
                             <img src="assets/Olho.png" onclick="MostrarOcultarSenha()" alt="" srcset="">
                         </div>
