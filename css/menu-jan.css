@@ -5,7 +5,7 @@ body, html{
 body{
     width: 100%;
     height: auto;
-    background-image: linear-gradient(var(--azul_claro_dg_escuro), var(--azul_escuro_dg_escuro), var(--azul_escuro_dg_escuro), var(--azul_claro_dg_escuro));
+    /* background-image: linear-gradient(var(--azul_claro_dg_escuro), var(--azul_escuro_dg_escuro), var(--azul_escuro_dg_escuro), var(--azul_claro_dg_escuro)); */
     background-size: contain; /*cover*/
     background-repeat: no-repeat;
 }
@@ -14,11 +14,9 @@ body{
     width: 100%;
     background-color: var(--cinza_claro);
     transition: background ease-out .2s;
-    border-top: 0px;
 }
 #header .navbar-collapse{
     width: auto;
-    
 }
 p{
     margin-bottom: 0;

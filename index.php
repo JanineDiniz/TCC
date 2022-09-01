@@ -126,13 +126,14 @@
     <footer class="container footer mt-0">
         <!-- Voltar Ao Topo -->
         <div id="topo" class="text-center">
-            <a href="#navbarNav" class="d-block ">
-                <button></button>
-                <p> Voltar ao Topo</p>
+            <a href="#navbarNav " class="d-block">
+                <img src="assets/Seta_esquerda.png" alt="" srcset="" style="transform:rotate(90deg);" class="d-inline-block img_prop " id="seta">
+                <p>Voltar ao topo</p>
             </a>
+            
         </div>
         <!-- Social Media -->
-        <div class="d-flex justify-content-center sociais">
+        <div class="d-flex justify-content-center sociais mt-3">
                 <img src="assets/Intagram.png" class="social " id="Insta" alt="Logo do instagram">
                 <img src="assets/Facebook.png" class="social" id="Face" alt="Logo do Facebook">
                 <img src="assets/Youtube.png" class="social" id="You" alt="Logo do Youtube">

@@ -16,7 +16,7 @@
             </a>
         </div>
         <div class="container text-center">
-            <form class="needs-validation" novalidate>
+             <form class="needs-validation" novalidate action="check-login.php" method="post">
                 <div class="img-container" >
                     <img src="assets/Logo Prov Branca.png" alt="" srcset="" class="img_fluid mb-3">
                     <h2 class="mb-3">Bem-vindo(a)!</h2>
@@ -27,14 +27,14 @@
                         <div  class="align-self-center ms-3 me-3">
                             <img src="assets/Email.png" alt="" srcset="">
                         </div>
-                        <input type="email" class="form-control insert" placeholder="Email" aria-label="Username" aria-describedby="addon-wrapping">
+                        <input type="email" class="form-control insert" name="email" placeholder="Email" aria-label="Username" aria-describedby="addon-wrapping">
 
                     </div>
                     <div class="input-group flex-nowrap inputs" data-bs-toggle="tooltip" data-bs-title="Sua senha deve conter 8-20 caracteres, letras, números e caracteres especiais." data-bs-trigger="focus" >
                         <div  class="align-self-center ms-3 me-3">
                             <img src="assets/Cadeado.png" alt="" srcset="">
                         </div>
-                        <input type="password" class="form-control insert" id="senha"  placeholder="Senha" aria-label="Username" aria-describedby="addon-wrapping">
+                        <input type="password" class="form-control insert" name="senha" id="senha"  placeholder="Senha" aria-label="Username" aria-describedby="addon-wrapping">
                         <div class="valid-feedback">
                             Looks good!
                           </div>
@@ -48,7 +48,7 @@
                     </div>
                     <div>
                         <button class="btn btn-outline-primary me-4 botao" ><a href="cadastro.html">Cadastre-se</a> </button>
-                        <button class="btn btn-primary botao" type="submit"><a href="cadastro.html">Entrar</a></button>
+                        <button class="btn btn-primary botao" type="submit">Entrar</button>
                     </div>
                 </div>
                 

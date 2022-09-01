@@ -6,22 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main1.css">
     <link rel="stylesheet" href="css/login_cadastro.css">
-    <link rel="stylesheet" href="css/forca_senha copy.css">
+    <link rel="stylesheet" href="css/forca_senha.css">
     <title>Document</title>
 </head>
 <body>
     <section>
         <div class="position-absolute mt-5 ms-5">
-            <a href="index.php">
+            <a href="http://localhost/Programa%C3%A7%C3%A3o/index.php">
                 <img src="assets/Seta_esquerda.png" alt="" srcset="">
             </a>
         </div>
         <div class="container text-center">
-            <form class="needs-validation" novalidate>
+            <form class="needs-validation" novalidate action="savecad.php" method="post">
 
                 <div>
                     <div class="img-container" >
-                        <img src="assets/Logo Prov Branca.png" alt="" srcset="" class="img_fluid mb-3">
+                        <img src="assets/logo.png" alt="" srcset="" class="img_fluid mb-3" width="240px">
                         <h2 class="mb-3">Crie sua conta!</h2>
                         <p class="mb-3">Por favor, se cadastre para continuar</p>
                     </div>
@@ -29,45 +29,44 @@
                         <div class="align-self-center ms-3 me-3">
                             <img src="assets/Usuario.png" alt="" srcset="">
                         </div>
-                        <input type="text" class="form-control insert" placeholder="Nome" aria-label="Username" aria-describedby="addon-wrapping" required>
+                        <input type="text" class="form-control insert" name = "username"placeholder="Nome" aria-label="Username" aria-describedby="addon-wrapping" required>
                     </div>
                     <div class="input-group flex-nowrap inputs">
                         <div  class="align-self-center ms-3 me-3">
                             <img src="assets/Email.png" alt="" srcset="">
                         </div>
-                        <input type="text" class="form-control insert" placeholder="Email" aria-label="Username" aria-describedby="addon-wrapping"required>
+                        <input type="text" class="form-control insert"  name="email"placeholder="Email" aria-label="Username" aria-describedby="addon-wrapping"required>
                     </div>
                     
                     <div class="input-group flex-nowrap inputs">
                         <div  class="align-self-center ms-3 me-3">
                             <img src="assets/Telefone.png" alt="" srcset="">
                         </div>
-                        <input type="text" class="form-control insert" placeholder="Telefone" aria-label="Username" aria-describedby="addon-wrapping"required>
+                        <input type="text" class="form-control insert" name="cellphone"placeholder="Telefone" aria-label="Username" aria-describedby="addon-wrapping"required>
                     </div>
                     
                     <div class="input-group flex-nowrap inputs field" data-bs-toggle="tooltip" data-bs-title="Sua senha deve conter 8-20 caracteres, letras, números e caracteres especiais." data-bs-trigger="focus">
                         <div class="align-self-center ms-3 me-3">
                             <img src="assets/Cadeado.png" alt="" srcset="">
                         </div>
-                        <input onkeyup="trigger()" onfocusout="FocusOut()" type="password" class="form-control insert" id="senha"  placeholder="Senha" aria-label="Username" aria-describedby="addon-wrapping" required>
+                        <input onkeyup="trigger()" onfocusout="FocusOut()" name="senha"type="password" class="form-control insert" id="senha"  placeholder="Senha" aria-label="Username" aria-describedby="addon-wrapping" required>
                         <div class="align-self-center ms-3 me-3 " >
                             <img src="assets/Olho.png" onclick="MostrarOcultarSenha()" alt="" srcset="">
                         </div>
-                        <div class="indicator">
-                            <span class="weak"></span>
-                            <span class="medium"></span>
-                            <span class="strong"></span>
-                            <div class="text p-2"></div>
-                        </div>
                     </div>
-
+                    <div class="indicator">
+                        <span class="weak"></span>
+                        <span class="medium"></span>
+                        <span class="strong"></span>
+                        <div class="text p-2"></div>
+                    </div>
                     
     
                     <div class="input-group flex-nowrap inputs" data-bs-toggle="tooltip" data-bs-title="Sua senha deve conter 8-20 caracteres, letras, números e caracteres especiais." data-bs-trigger="focus" >
                         <div  class="align-self-center ms-3 me-3">
                             <img src="assets/Cadeado.png" alt="" srcset="">
                         </div>
-                        <input type="password" class="form-control insert" id="confsenha"  placeholder="Confirmar Senha" aria-label="Username" aria-describedby="addon-wrapping"required>
+                        <input type="password" class="form-control insert" name="confsenha" id="confsenha"  placeholder="Confirmar Senha" aria-label="Username" aria-describedby="addon-wrapping"required>
                         <div class="align-self-center ms-3 me-3" >
                             <img src="assets/Olho.png" onclick="MostrarOcultarConfSenha()" alt="" srcset="">
                         </div>

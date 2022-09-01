@@ -30,6 +30,11 @@ p{
     padding-right: 1.5rem;
     transition: transform .6s;
 }
+.seta{
+    background-image: linear-gradient(var(--azul_escuro_dg_claro), var(--azul_card),var(--azul_claro_dg_claro));
+    border-radius: 0.7rem;
+    margin-top: -1rem;
+}
 
 #header .nav-link:hover{
     background-image: linear-gradient(var(--azul_escuro_dg_claro), var(--azul_claro_dg_claro));
@@ -64,8 +69,6 @@ p{
     .navbar-nav{
         padding-bottom: 0;
     }
-
-
 }
 @media (max-width: 767.98px) {
     #header #link-home{
