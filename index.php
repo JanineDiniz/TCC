@@ -23,8 +23,8 @@
                 <div class="col-md-6 col-sm-12 align-self-center mb-md-0 mb-4 ">
                     <h1 id="titulo_land" class="titulo">Segurança dos seus arquivos garantida com Criptografia!</h1>
                     <h4 id="subtitulo_land" class="mb-3 mt-3 subtitulo">Vamos garantir a segurança de seus arquivos de maneira prática e confiável, por meio de Certificados e Assinaturas Digitais!</h4>
-                    <a href="cadastro.html" class="btn btn-primary rounded-pill entrar border-0 d-md-inline-block d-flex flex-sm-column btn_land mb-md-0 mb-2 me-md-2" id="btn_cad">Cadastre-se</a>
-                    <a href="login.html" class="btn btn-primary rounded-pill entrar border-0 d-md-inline-block d-flex flex-sm-column btn_land" id="btn_cad">Entrar</a>
+                    <a href="cadastro.html" class="btn btn-primary rounded-pill entrar_text  d-md-inline-block d-flex flex-sm-column btn_land mb-md-0 mb-2 me-md-2" id="btn_cad">Cadastre-se</a>
+                    <a href="login.html" class="btn btn-primary rounded-pill entrar_text  d-md-inline-block d-flex flex-sm-column btn_land" id="btn_cad">Entrar</a>
                 </div>
                 <!-- Direita -->
                 <div class="col-md-6 col-sm-12 text-center" id="img_principal">

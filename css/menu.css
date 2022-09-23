@@ -110,8 +110,14 @@ p{
     font-size: 0.8rem;
     margin-top: -1rem;
 }
-
-
+.gerenc-perfil{
+    text-decoration: none;
+    color: black;
+}
+.gerenc-perfil:hover{
+    color:#fff  
+    
+}
 .foto_usu{
     margin-left:1rem;
 }
