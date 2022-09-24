@@ -67,15 +67,13 @@ function Progresso2(){
     var senhafisvalue = senhafis.value;
     var senhajurivalue = senhajuri.value;
 
-    progressStep2.classList.add("progress-step-active");
     
-
-//     // if (senhafisvalue && senhajurivalue != ""){
-//     //     alert(userjurivalue);
-//     //     alert(userjurivalue);
-//     // }
-//     // else{
-//     //     alert("erro");
-//     // }
+    
+    if ( (cpfvalue || cnpjvalue) && (userfisvalue || userjurivalue ) && (senhafisvalue || senhajurivalue) != ""){
+        progressStep2.classList.add("progress-step-active");
+    }
+    else {
+        progressStep2.classList.remove("progress-step-active");
+    }
 
 }
