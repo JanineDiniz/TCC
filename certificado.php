@@ -17,13 +17,14 @@
 <body onload="EsconderForm()">
 
     <?php
+        // include "menu.html";
         include "ProgressBar.html";
 
     ?>
     <section>
         <div class="container text-center">
             <form >
-                <p class="mb-2 mt-5 instrucao">Escolha o tipo de Certificado que deseja emitir</p>
+                <p class="mb-2 mt-2 instrucao">Escolha o tipo de Certificado que deseja emitir</p>
                 <div class="formulario" id="selecionar">
                     <div class="input-group flex-nowrap inputs">
                         <div class="align-self-center ms-3 me-3">
@@ -61,9 +62,9 @@
                         </div>
     
                     </div>
-                    <div class="d-flex justify-content-between mt-4">
-                        <button class="btn btn-outline-primary botao" id="btn_secundario" type = “reset”>Cancelar</button>
-                        <button class="btn btn-primary botao" id="btn_primario" type="submit" onclick="Progresso2()">Cadastrar</button>
+                    <div class="mt-4">
+                        <!-- <button class="btn btn-outline-primary botao" id="btn_secundario" type = “reset”>Cancelar</button> -->
+                        <button class="btn botao" id="btn_primario" type="submit" onclick="Progresso2()">Gerar</button>
                     </div>
                 </div>    
                 <div class="formulario" id="juridica">
@@ -89,9 +90,9 @@
                         </div>
     
                     </div>
-                    <div class="d-flex justify-content-between mt-4">
-                        <button class="btn btn-outline-primary botao" id="btn_secundario" type = “reset”>Cancelar</button>
-                        <button class="btn btn-primary botao" id="btn_primario" type="submit" onclick="Progresso2()">Cadastrar</button>
+                    <div class="mt-4">
+                        <!-- <button class="btn btn-outline-primary botao" id="btn_secundario" type = “reset”>Cancelar</button> -->
+                        <button class="btn botao" id="btn_primario" type="submit" onclick="Progresso2()">Gerar</button>
                     </div>
                 </div> 
             </form>

@@ -10,7 +10,6 @@ body{
     /* margin: 10%; */
 }
 .text-center{
-    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,6 +27,7 @@ body{
     border-bottom: 1px solid var(--cinza_escuro);
     margin-bottom: 1em;
     width: 23em;
+
 }
 .icon, .insert{
     border: none;
@@ -50,12 +50,13 @@ body{
     background-color: rgb(255, 255, 255);
     box-shadow: none;
 }
-.botao{
-    border-radius: 25px;
-}
+
 #btn_primario{
     background-color: var(--azul_escuro_dg_claro);
     border: var(--azul_escuro_dg_claro);
+    border-radius: 25px;
+    width: 10rem;
+    color: white;
 }
 #btn_secundario{
     color: var(--azul_escuro_dg_claro);
