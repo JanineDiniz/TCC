@@ -92,7 +92,7 @@
                     </div>
                     <div class="mt-4">
                         <!-- <button class="btn btn-outline-primary botao" id="btn_secundario" type = “reset”>Cancelar</button> -->
-                        <button class="btn botao" id="btn_primario" type="submit" onclick="Progresso2()">Gerar</button>
+                        <button class="btn botao" id="btn_primario" type="submit" onclick="Progresso2()" onclick="UpdateProgressBar()">Gerar</button>
                     </div>
                 </div> 
             </form>

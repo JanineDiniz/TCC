@@ -28,13 +28,14 @@ var formparag = document.querySelector("#pform");
 var progressStep1 = document.querySelector("#step1");
 var progressStep2 = document.querySelector("#step2");
 var progressStep3 = document.querySelector("#step3");
-// var idselect = document.querySelector("#tipo");
-// var valorselect = idselect.options[idselect.selectedIndex].value;
+const progresActive = document.querySelectorAll(".progress-step-active");
+const progress = document.getElementById("progress")
 
 
 function TrocarForm(valor){
     if (valor === "1" || valor === "2"){
         progressStep1.classList.add("progress-step-active");
+        
     }
     if (valor === "2"){
         formfis.style.display = "block";
@@ -46,6 +47,7 @@ function TrocarForm(valor){
         formjuri.style.display = "block";
         formparag.style.display = "block";
     }
+    
 }
 
 function EsconderForm(){
@@ -71,9 +73,16 @@ function Progresso2(){
     
     if ( (cpfvalue || cnpjvalue) && (userfisvalue || userjurivalue ) && (senhafisvalue || senhajurivalue) != ""){
         progressStep2.classList.add("progress-step-active");
+        // progress.classList.add("line-step-active");
+
     }
     else {
         progressStep2.classList.remove("progress-step-active");
     }
+    
+}
 
+function UpdateProgressBar(){
+    // progress.style.backgroundcolor = "blue";
+    // progress.style.width = ((progresActive.length - 1) / (progressSteps.length - 1)) * 100 + "%";
 }
