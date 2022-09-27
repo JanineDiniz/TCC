@@ -58,9 +58,6 @@ body{
     background-color: var(--cinza_escuro);
     width: 0%;
 }
-/* .line-step-active{
-    background: linear-gradient(left, red 10%, blue 0%);
-} */
 .progress-step{
     width: 2.1875rem;
     height: 2.1875rem;

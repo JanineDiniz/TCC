@@ -4,25 +4,17 @@ const progress = document.getElementById(".progress")
 // const formSteps= document.querySelectorAll(".form-step");
 const progressSteps = document.querySelectorAll(".progress-step");
 
-
-const progresActive = document.querySelectorAll(".progress-step-active");
-
-
-
-
-
-
-// function CorProgress() {
-//     var select = document.getElementById("tipo");
-//     var num = 2;
-//     if (num ==2){
-//         progressSteps.classList.add("progress-step-active");
-//     }
-//     select.addEventListener('change', CorProgress);
-//     if (select.value === '1' || select.value === '2') {
-//         progressSteps.classList.add("progress-step-active");
-//     }
-// }    
+function CorProgress() {
+    var select = document.getElementById("tipo");
+    var num = 2;
+    if (num ==2){
+        progressSteps.classList.add("progress-step-active");
+    }
+    select.addEventListener('change', CorProgress);
+    if (select.value === '1' || select.value === '2') {
+        progressSteps.classList.add("progress-step-active");
+    }
+}    
 
 
 // let formStepsNum = 3;

@@ -37,3 +37,7 @@ body{
 .pdf_viewer{
     border-radius:10px;
 }
+#etapas{
+    margin-top: 4rem;
+    margin-bottom: 7rem;
+}

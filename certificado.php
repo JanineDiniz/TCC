@@ -18,7 +18,7 @@
 
     <?php
         // include "menu.html";
-        include "ProgressBar.html";
+        include "ProgressBarCert.html";
 
     ?>
     <section>
