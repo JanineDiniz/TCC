@@ -104,15 +104,19 @@ body{
     transform: scale(1.3);
 }
 .name{
-    font-size: 18px;
+    font-size: 19px;
     font-weight: bold;
     color: rgb(0, 0, 0);
+    padding-top: 10px;
 }
 .descricao{
     font-size: 14px;
     text-align: center;
-    color: rgb(0, 0, 0);
+    color: rgb(94, 94, 94);
+    font-weight: bold;
     margin: 10px;
+    padding-top: 10px;
+    padding-bottom: 15px;
 }
 .button_num{
     border: none;
