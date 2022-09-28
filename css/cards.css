@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+body, html{
+    font-family: 'Raleway', sans-serif;
+    
+}
 *{
     margin: 0;
     padding: 0;
@@ -9,25 +14,41 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(177, 177, 177);
+    background-color: rgb(255, 255, 255);
+}
+.slide-container{
+    max-width: 1120px;
+    width: 100%;
+    /* background-color: rgb(233, 233, 233); */
+    padding: 40px 0;
+    border-radius: 25px;
+    /* box-shadow: 0px 0px 15px 0px rgb(165, 165, 165); */
+    
 }
 .slide-content{
-    margin: 0 40px;
+    margin: 40px 40px;
+    /* background-color: #003451; */
+    overflow: hidden;
+    border-radius: 25px;
+    padding: 30px ;
 }
 .card{
-    width: 300px;
+    /* margin: 40px 0; */
     border-radius: 25px;
     background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 10px 2px rgb(148, 148, 148);
 }
 .image-content, .card-content{
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 10px 14px ;
+    white-space: normal;
 }
 .image-content{
     row-gap: 5px;
     position: relative;
+    padding: 25px 0;
 }
 .overlay{
     position: absolute;
@@ -40,7 +61,18 @@ body{
     background-image: linear-gradient( #007ABF, #003451);
 }
 .overlay::before, .overlay::after{
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+    height: 40px;
+    width: 40px;
+    background-color: #003451;
     
+}
+.overlay::after{
+    border-radius: 0 25px 0 0 ;
+    background-color: white;
 }
 .card-image{
     position: relative;
@@ -65,7 +97,7 @@ body{
 .descricao{
     font-size: 14px;
     text-align: center;
-    color: rgb(95, 95, 95);
+    color: rgb(0, 0, 0);
     margin: 10px;
 }
 .button{
@@ -77,4 +109,41 @@ body{
     background-image: linear-gradient(to right, #75B9E1, #0F6191);
     border-radius: 50%;
     margin: 10px;
+    /* position: absolute; */
+}
+.swiper-navBtn{
+    color: #00416460;
+    transition: color 0.3s ease;
+}
+.swiper-navBtn:hover{
+    color: #005786;
+}
+.swiper-navBtn::before, .swiper-navBtn::after{
+    font-size: 40px;
+}
+.swiper-button-next{
+    right: 0;
+}
+.swiper-button-prev{
+    left: 0;
+}
+.swiper-pagination-bullet{
+    background-color: #001a51;
+    opacity: 1;
+}
+.swiper-pagination-bullet-active{
+    background-color: #001a51;
+
+}
+
+@media screen and (max-width:768px){
+    .slide-content{
+        margin: 0 10px;
+    }
+    .card-content{
+        margin: 10px 10px;
+    }
+    .swiper-navBtn{
+        display: none;
+    }
 }

@@ -7,12 +7,13 @@
     <title>Cards</title>
     <link rel="stylesheet" href="css/cards.css">
     <script src="js/cards.js"></script>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
 </head>
 <body>
-    <div class="slide-container">
+    <div class="slide-container swiper">
         <div class="slide-content">
-            <div class="card-wrapper">
-                <div class="card">
+            <div class="card-wrapper swiper-wrapper">
+                <div class="card swiper-slide">
                     <div class="image-content">
                         <span class="overlay"></span>
                         <div class="card-image">
@@ -22,13 +23,53 @@
                     <div class="card-content">
                         <h2 class="name">Escolha um arquivo</h2>
                         <p class="descricao">
-                            testetestetestetestetestetestetesteteste
+                            testetestetestetestetestetes tetesteteste111111111111
                         </p>
                         <button class="button">1</button>
                     </div>
                 </div>
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+                        <div class="card-image">
+                            <img src="assets/ImgInsert.png" alt="" class="card-img">
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h2 class="name">Escolha um arquivo</h2>
+                        <p class="descricao">
+                            testetestetestetesteteste testetesteteste22222222222
+                        </p>
+                        <button class="button">2</button>
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+                        <div class="card-image">
+                            <img src="assets/ImgInsert.png" alt="" class="card-img">
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h2 class="name">Escolha um arquivo</h2>
+                        <p class="descricao">
+                            testetestetestetestetestete stetesteteste333333333
+                        </p>
+                        <button class="button">3</button>
+                    </div>
+                </div>
             </div>
         </div>
+        
+        <div class="swiper-button-prev swiper-navBtn"></div>
+        <div class="swiper-button-next swiper-navBtn"></div>
+        <div class="swiper-pagination"></div>
     </div>
 </body>
+
+<!-- Swiper js -->
+<script src="js/swiper-bundle.min.js"></script>
+
+<!-- JavaScript -->
+<script src="js/cards.js"></script>
 </html>
