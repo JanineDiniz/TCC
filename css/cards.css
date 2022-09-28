@@ -38,6 +38,12 @@ body{
     background-color: rgb(255, 255, 255);
     box-shadow: 0px 0px 10px 2px rgb(148, 148, 148);
 }
+
+ /* .teste:hover{
+    transform: scale(1.1); /* Equal to scaleX(0.7) scaleY(0.7) 
+    background-color: pink;
+  } */
+
 .image-content, .card-content{
     display: flex;
     flex-direction: column;
