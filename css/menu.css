@@ -58,6 +58,7 @@ p{
     font-size: 1.1rem;
 }
 
+
 .menu-perf-text{
     font-size: 0.8rem;
 }
@@ -75,6 +76,7 @@ p{
 #header .dropdown-item{
     border-radius:-0px;
     margin-bottom: 0.5rem;
+    color: white;
 }
 #header .usuario{
     height: 5rem;
@@ -121,7 +123,9 @@ p{
     margin-top: -0.19rem;
     margin-right:0.5rem;
 }
+#perfil{
 
+}
 
 /*.entrar{
     background-image: linear-gradient(to right, var(--azul_escuro_dg_claro), var(--azul_claro_dg_claro));
