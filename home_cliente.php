@@ -24,7 +24,7 @@
             <hr>
             <div class="ultimas">
                 <div class="ultCerti">
-                    <p class="mb-1">Últimos Certificados Gerados</p>
+                    <p class="mb-1">Último Certificado Gerado</p>
                     <div class="arquivos row" id="certificado">
                         <div class="col-1 content-flex">
                             <img class="icone" src="assets/icon_certificado1.svg" alt="" srcset="">
@@ -36,17 +36,35 @@
                             <p class="dados datas" id="validade">Data de Validade: </p> 
                         </div>
                         <div class="col-3">
-                            <!-- <img src="assets/InsertImg.svg" alt="" srcset=""> -->
+                            
                         </div>
-                        <div class="col-3">
-                            <!-- <img src="assets/InsertImg.svg" alt="" srcset=""> -->
+                        <div class="col-3 content-block d-flex flex-column" id="baixar_direita">
+                            <div id="baixar">
+                                <a href="#">Download</a>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="ultAssina mt-3">
-                    <p class="mb-1">Últimos Arquivos Assinados</p>
-                    <div class="arquivos" id="assinatura">
-
+                    <p class="mb-1">Último Arquivo Assinado</p>
+                    <div class="arquivos row" id="assinatura">
+                    <div class="col-1 content-flex">
+                            <img class="icone" src="assets/icon_assinatura3.svg" alt="" srcset="">
+                        </div>
+                        <div class="col-5 content-block d-flex flex-column">
+                            <!-- <img src="assets/InsertImg.svg" alt="" srcset=""> -->
+                            <p class="dados">Nome do Titular</p>    
+                            <p class="dados datas" id="emissao">Data de Emissão: </p> 
+                            <p class="dados datas" id="validade">Data de Validade: </p> 
+                        </div>
+                        <div class="col-3">
+                            
+                        </div>
+                        <div class="col-3 content-block d-flex flex-column" id="baixar_direita">
+                            <div id="baixar">
+                                <a href="#">Download</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
