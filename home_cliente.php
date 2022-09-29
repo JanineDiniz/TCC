@@ -19,7 +19,7 @@
     <div class="container mt-5">
         <h1>Bem-vindo(a) Usuário</h1>
         <hr class="mt-4">
-        <div class="mt-4" id="atividades">
+        <div class="mt-5" id="atividades">
             <p id="titulo">Atividade</p>
             <hr>
             <div class="ultimas">
@@ -49,7 +49,7 @@
                     <p class="mb-1">Último Arquivo Assinado</p>
                     <div class="arquivos row" id="assinatura">
                     <div class="col-1 content-flex">
-                            <img class="icone" src="assets/icon_assinatura3.svg" alt="" srcset="">
+                            <img class="icone" src="assets/icon_assinatura4.svg" alt="" srcset="">
                         </div>
                         <div class="col-5 content-block d-flex flex-column">
                             <!-- <img src="assets/InsertImg.svg" alt="" srcset=""> -->
@@ -69,6 +69,7 @@
                 </div>
             </div>
         </div>
+        <hr id="antes_ferra">
     </div>
 
     <?php

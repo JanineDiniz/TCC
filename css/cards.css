@@ -16,17 +16,62 @@ body{
     justify-content: center;
     background-color: rgb(255, 255, 255);
 } */
+#chamada{
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 2.6rem;
+    font-weight: bold;
+}
+.button_cards_row{
+    height: 60px;
+    width: 80%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 120px;
+    /* align-items: center; 
+    justify-content: center;
+    display: flex; */
+}
+#primeiro{
+    margin-left: 20px;
+}
+.button_cards{
+    position: relative;
+    height: 100%;
+    background-color: #0f6891;
+    align-items: center; 
+    justify-content: center;
+    display: flex;
+    color: white;
+    font-size: 1.5rem;
+    border: 2px solid black;
+
+
+}
+.centro{
+    margin-top: 20px;
+}
+.chamada2{
+    font-size: 2.2rem;
+    text-align: center;
+}
+#chamada_assina{
+    margin-top: 50px;
+}
 .slide-container{
-    max-width: 1120px;
+    max-width: 1420px;
     width: 100%;
-    /* background-color: rgb(233, 233, 233); */
-    padding: 40px 0;
+    background-color: rgb(255, 255, 255);
+    padding: 20px 0;
     border-radius: 25px;
     /* box-shadow: 0px 0px 15px 0px rgb(165, 165, 165); */
     
 }
+#antes_ferra{
+    margin-top: 50px;
+}
 .slide-content{
-    margin: 40px 40px;
+    margin: 10px 40px;
     /* background-color: #003451; */
     overflow: hidden;
     border-radius: 25px;
