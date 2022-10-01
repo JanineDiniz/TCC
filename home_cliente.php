@@ -16,7 +16,7 @@
     <?php
         include "menu.html";
     ?>
-    <div class="container mt-5">
+    <div class="container mt-4">
         <h1>Bem-vindo(a) Usuário</h1>
         <hr class="mt-4">
         <div class="mt-5" id="atividades">

@@ -9,7 +9,6 @@ body{
     background-color: var(--branco);
 }
 .titulo{
-    color:black;
     text-align: center;
 }
 .row-as{

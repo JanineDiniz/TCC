@@ -66,7 +66,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    text-align: center;
 }
 .progress-step::before{
     counter-increment: step;

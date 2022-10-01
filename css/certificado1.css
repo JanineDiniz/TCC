@@ -4,7 +4,7 @@ body, html{
     
 }
 body{
-    height: auto;
+    /* height: auto; */
     background-color: var(--branco);
     background-size: cover; /*cover*/
     /* margin: 10%; */
@@ -15,7 +15,9 @@ body{
     align-items: center;
     
 }
-
+.titulo{
+    text-align: center;
+}
 #pform{
     display: block;
 }

@@ -20,3 +20,9 @@
     --salmao: #E85952;
     --gradiente:linear-gradient(#0F6191, #75B9E1);
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+body, html{
+    font-family: 'Raleway', sans-serif;
+    
+}

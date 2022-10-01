@@ -43,6 +43,7 @@ body{
     counter-reset: step;
     margin: 3rem 4rem 4rem;
 }
+
 .progressbar::before, .progress{
     content: "";
     position: absolute;
@@ -66,7 +67,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    text-align: center;
 }
 .progress-step::before{
     counter-increment: step;

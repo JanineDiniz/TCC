@@ -10,19 +10,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main1.css">
     <link rel="stylesheet" href="css/certificado1.css">
-
+    <link rel="stylesheet" href="css/menu.css">
 
     <title>Document</title>
 </head>
 <body onload="EsconderForm()">
 
     <?php
-        // include "menu.html";
-        include "ProgressBarCert.html";
+        include "menu.html";
 
     ?>
     <section>
+        <div class="mt-5">
+            <h1 class="titulo">Geração de Certificado</h1>
+            <?php
+                include "ProgressBarCert.html";
+
+            ?>
+        </div>
         <div class="container text-center">
+
             <form >
                 <p class="mb-2 mt-2 instrucao">Escolha o tipo de Certificado que deseja emitir</p>
                 <div class="formulario" id="selecionar">
@@ -98,6 +105,7 @@
             </form>
         </div>
     </section>
+
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
     <script src="JS/bootstrap.min.js"></script>
     <script src="js/certificado.js"></script>
