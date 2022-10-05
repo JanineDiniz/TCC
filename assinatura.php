@@ -30,9 +30,11 @@
                     <form action="test.php" method="post" enctype="multipart/form-data">
                         <input id="form_arquivo" type="file" class="form-control mb-3 pdf" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" accept=".pdf" name="pdf">
                         <h5 class="pdf_text ms-2"> Escolha somente arquivos com extensão .pdf </h5>
-                        <input onclick = "ValidaArquivo()" type="submit" value="Validar PDF" name="submit" class="but_pdf btn btn-primary mt-3"> 
+                        <input onclick = "ValidaArquivo()" value="teste" > 
+                        <input type="submit" value="Validar PDF" name="submit" class="but_pdf btn btn-primary mt-3"> 
                     </form>
                 </div>
+                <p id="teste"></p>
                 <div class="col-md-12 col-sm-12 align-self-center mt-2 mb-5">
                     <iframe src="pdf/Array" width="100%" height="700" class="pdf_viewer">
                     </iframe>
