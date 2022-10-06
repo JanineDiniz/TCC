@@ -23,36 +23,33 @@
                     <h1 class="titulo">Lista de Certificados</h1>
                 </div>
             </div>
+            <div class='shadow mb-5'  id='atividades'>
             <?php
             $stmt = $pdo->prepare("select * from tbcertificado");	
             $stmt ->execute();
             while($row = $stmt ->fetch(PDO::FETCH_BOTH)){
             echo"
-                <div class='shadow'  id='atividades'>
-                    <div class='certi shadow'>
-                        <div class='arquivos row' id='certificado'>
-                            <div class='col-1 content-flex'>
-                                <img class='icone' src='assets/icon_certificado1.svg' alt='' srcset=''>
-                            </div>
-                            <div class='col-5 content-block d-flex flex-column'>
-                                <!-- <img src='assets/InsertImg.svg' alt='' srcset=''> -->
-                                <p class='dados'>Nome do Titular: ". $row[1] ."</p>    
-                                <p class='dados datas' id='emissao'>Data de Emissão: ". $row[5] ."</p> 
-                                <p class='dados datas' id='validade'>Data de Validade: ". $row[6] ."</p> 
-                            </div>
-                            <div class='col-3'>
-                                
-                            </div>
-                            <div class='col-3 content-block d-flex flex-column' id='baixar_direita'>
-                                <div id='baixar'>
-                                    <a href='#'>Download</a>
-                                </div>
-                            </div>
+                <div class='arquivos row mb-2 shadow' id=''>
+                    <div class='col-1 content-flex'>
+                        <img class='icone' src='assets/icon_certificado1.svg' alt='' srcset=''>
+                    </div>
+                    <div class='col-5 content-block '>
+                        <p class='dados'>Nome do Titular: ". $row[1] ."</p>    
+                        <p class='dados datas' id='emissao'>Data de Emissão: ". $row[5] ."</p> 
+                        <p class='dados datas' id='validade'>Data de Validade: ". $row[6] ."</p> 
+                    </div>
+                    <div class='col-3'>
+                        
+                    </div>
+                    <div class='col-3 content-block d-flex flex-column' id='baixar_direita'>
+                        <div id='baixar'>
+                            <a href='#'>Download</a>
                         </div>
                     </div>
                 </div>";
             }
             ?>
+            </div>
         </div>
     </section>
     <?php   
