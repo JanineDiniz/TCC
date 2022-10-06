@@ -18,7 +18,7 @@ $check = $result->fetchAll(PDO::FETCH_ASSOC);
 print_r($check);
 if($check[0] >= 1) {
     $_SESSION['user'] = $email;
-    header('location:index.php');
+    header('location:home_cliente.php');
     exit();
 } else {
     $_SESSION['semperm'] = true;

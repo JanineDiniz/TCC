@@ -78,6 +78,11 @@ p{
     margin-bottom: 0.5rem;
     color: white;
 }
+#header .dropdown-item:hover{
+    color: black;
+    font-weight: bold;
+}
+
 #header .usuario{
     height: 5rem;
 }

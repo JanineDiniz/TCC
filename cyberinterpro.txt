@@ -32,9 +32,11 @@ DROP TABLE IF EXISTS `tbcertificado`;
 CREATE TABLE IF NOT EXISTS `tbcertificado` (
   `padrao` varchar(20) NOT NULL,
   `nome` varchar(100) NOT NULL,
-  `cpf` char(9) NOT NULL,
-  `cnpj` char(14) NOT NULL,
+  `cpf` char(9),
+  `cnpj` char(14),
   `senha` varchar(45) NOT NULL,
+  `data_emissao` date,
+  `data_validade` date,
   PRIMARY KEY (`cpf`,`cnpj`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 

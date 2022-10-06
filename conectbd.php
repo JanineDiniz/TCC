@@ -10,8 +10,8 @@
 	//Tentativa de conexão, caso falhe exibe mensagem de erro
 	try{
 	$pdo = new PDO("mysql:host=$servidor;dbname=$banco",$usuario,$senha);
-	echo "Conexão realizada com sucesso!";
-	echo "</br>";
+	//echo "Conexão realizada com sucesso!";
+	//echo "</br>";
 	}catch(PDOException $err) {
 		echo "Conexão falhou, erro: " . $err->getMessage();
 	}
