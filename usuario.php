@@ -1,3 +1,7 @@
+<?php
+    include('conectbd.php');
+    include('verificar-login.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,7 +27,7 @@
                         <h1 class="titulo d-inline-flex ">Seu perfil</h1>
                     </div>
                     <div class="d-inline"id="alterar-senha">
-                        <a class="d-inline nav-link chave" href="perfil.html">
+                        <a class="d-inline nav-link chave" href="perfil.php">
                         <img src="assets/Grupo 188.png" alt="" srcset="" class="mt-1">
                         Alterar Senha</a>
                     </div>
@@ -32,7 +36,7 @@
                     <h3 class="titulo2 d-inline-flex ms-2">Informações Básicas</h3>
                     <ul class="info-text list-group">
                         <li class="list-group-item m-2 d-inline ">Foto: <img src="assets/Icon awesome-user-circle.png" class="info-usu"></li>
-                        <li class="list-group-item m-2 d-inline"> Nome: <h1 class="d-inline info-usu">Nome do usuário</h1>
+                        <li class="list-group-item m-2 d-inline"> Nome: <h1 class="d-inline info-usu"> <?php echo"$_SESSION[user]" ?></h1>
                         </li>
                         <li class="list-group-item m-2 d-inline">País: <h1 class="d-inline info-usu"> Brasil</h1></li>
                     </ul>
@@ -40,8 +44,8 @@
                 <div class="col-md-11 col-sm-11 info shadow p-2 mb-5  bg-body rounded" id="info-contato">
                     <h3 class="titulo2 d-inline-flex ms-2">Informações de Contato</h3>
                     <ul class="info-text list-group">
-                        <li class="list-group-item m-2 d-inline">Email: <h1 class="d-inline info-usu">Example@gmail.com</h1></li>
-                        <li class="list-group-item m-2 d-inline">Telefone: <h1 class="d-inline info-usu">(XX)XXXXX-XXXX</h1></li>
+                        <li class="list-group-item m-2 d-inline">Email: <h1 class="d-inline info-usu"><?php echo"$_SESSION[email]"?></h1></li>
+                        <li class="list-group-item m-2 d-inline">Telefone: <h1 class="d-inline info-usu"><?php echo"$_SESSION[telefone]"?></h1></li>
                     </ul>
                 </div>
             </div> 

@@ -1,3 +1,7 @@
+<?php
+    include('conectbd.php');
+    include('verificar-login.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,7 +21,7 @@
         include "menu.html";
     ?>
     <div class="container mt-4">
-        <h1>Bem-vindo(a) Usuário</h1>
+        <h1>Bem-vindo(a) <?php echo"$_SESSION[user]" ?></h1>
         <hr class="mt-4">
         <div class="mt-5" id="atividades">
             <p id="titulo">Atividade</p>
