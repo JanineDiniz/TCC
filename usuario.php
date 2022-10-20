@@ -35,6 +35,7 @@
                 <div class="col-md-11 col-sm-11 info shadow p-2 mb-5 bg-body rounded" id="info-basico">
                     <h3 class="titulo2 d-inline-flex ms-2">Informações Básicas</h3>
                     <ul class="info-text list-group">
+                        
                         <li class="list-group-item m-2 d-inline ">Foto: <img src="assets/Icon awesome-user-circle.png" class="info-usu"></li>
                         <li class="list-group-item m-2 d-inline"> Nome: <h1 class="d-inline info-usu"> <?php echo"$_SESSION[user]" ?></h1>
                         </li>

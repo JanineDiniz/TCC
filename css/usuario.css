@@ -34,7 +34,7 @@ body{
     border-radius: 0px;
 }
 .info-text li{
-    color: var(--cinza_escuro);
+    color: var(--cinza_escurom);
     border:0px;
     border-bottom: 1px solid var(--cinza_escuro);
     border-radius: 0px;
