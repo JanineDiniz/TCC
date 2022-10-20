@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/menu.css">
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
     <script src="JS/bootstrap.min.js"></script>
+    <script src="JS/usuario.js"></script>
 </head>
 <body>
     <?php
@@ -36,15 +37,15 @@
                     <h3 class="titulo2 d-inline-flex ms-2">Informações Básicas</h3>
                     <ul class="info-text list-group">
                         <li id='valor_foto' class="list-group-item m-2 d-inline ">Foto: <img src="assets/Icon awesome-user-circle.png" class="foto-usu">
-                        <button type='button' id='botao_editar' class='but-edi'> Editar </button>
+                        <button type='button' id='botao_editar' class='but-edi' onclick='editar_registro()'> Editar </button>
                         <button type='button' id='botao_salvar' class='but-edi'> Salvar </button>
                         </li>
-                        <li id='valor_nome' class="list-group-item m-2 d-inline"> Nome: <h1 class="d-inline info-usu"> <?php echo"$_SESSION[user]" ?></h1>
-                        <button type='button' id='botao_editar' class='but-edi'> Editar </button>
+                        <li id='valor_nome' class="list-group-item m-2 d-inline"> Nome: <h1 class="d-inline info-usu"> <?php echo"$_SESSION[user]"?></h1>
+                        <button type='button' id='botao_editar' class='but-edi' onclick='editar_registro()'> Editar </button>
                         <button type='button' id='botao_salvar' class='but-edi'> Salvar </button>
                         </li>
                         <li id='valor_pais' class="list-group-item m-2 d-inline">País: <h1 class="d-inline info-usu"> Brasil</h1>
-                        <button type='button' id='botao_editar' class='but-edi'> Editar </button>
+                        <button type='button' id='botao_editar' class='but-edi' onclick='editar_registro()'> Editar </button>
                         <button type='button' id='botao_salvar' class='but-edi'> Salvar </button>
                         </li>
                     </ul>
