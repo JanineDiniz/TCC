@@ -12,11 +12,13 @@
     <script src="pdf/mostrarpdf.js"></script>
     <script src="pdf/pdf.js"></script>
     <title> Assinatura </title>
+    <script src="https://unpkg.com/pdf-lib@1.4.0"></script>
+    <script src="https://unpkg.com/downloadjs@1.4.7"></script>
 </head>
 <body>
     <?php
         include "menu.html";
-    ?>
+        ?>
     <section id="assinatura">
         <div class="container pt-md-0 pt-5 pb-0" >
             <div class="row-as mt-3">
@@ -26,7 +28,7 @@
                 <div class="col-md-12 col-sm-12 align-self-center" id="etapas">
                     <?php
                         include "ProgressBarAssina.html";
-                    ?>
+                        ?>
                 </div>
                 <div class="col-md-12 col-sm-12 align-self-center" id="esc-arquivo">
                     <form action="test.php" method="post" enctype="multipart/form-data">
@@ -37,13 +39,15 @@
                 </div>
                 <div class="col-md-12 col-sm-12 align-self-center mt-2 mb-5">
                     <iframe src="pdf/Array" width="100%" height="700" class="pdf_viewer">
-                    </iframe>
+                        </iframe>
+                    </div>
+                    <button id="proximo">Proximo</button>
                 </div>
             </div>
-        </div>
-    </section>
-    <?php   
+        </section>
+        <?php   
         include "footer.html";
-    ?>
+        ?>
+<script src="js/assinaturaImg.js"></script>
 </body>
 </html>
