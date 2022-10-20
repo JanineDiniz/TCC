@@ -35,9 +35,6 @@ body{
 }
 .info-text li{
     color: var(--cinza_escurom);
-    border:0px;
-    border-bottom: 1px solid var(--cinza_escuro);
-    border-radius: 0px;
     background-color: var(--cinza_claro);
 }
 
@@ -45,9 +42,26 @@ body{
     margin-left:70%;
 }
 
+.foto-usu{
+    margin-left: 1rem;
+}
+
 .info-usu{
     font-size: 1rem;
     color:black;
     font-weight: bold;
     margin-left: 1rem;
+    width: 100%;
+}
+
+.but-edi{
+    background-color: var(--azul_escuro_dg_claro);
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    border:0px;
+    border-radius: 5px;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    position: 100px;
+    text-align: end;
 }
