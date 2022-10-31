@@ -29,8 +29,8 @@
             ?>
         </div>
         <div class="container text-center">
-
-            <form >
+        
+            <form>
                 <p class="mb-2 mt-2 instrucao">Escolha o tipo de Certificado que deseja emitir</p>
                 <div class="formulario" id="selecionar">
                     <div class="input-group flex-nowrap inputs">
@@ -44,26 +44,27 @@
                         </select>
                     </div>
                 </div>
-            <form action="" >
+            </form>
+            <form novalidate action="salvar-certificado.php" method="post" >
                 <p class="mt-5 mb-2 instrucao" id="pform">Insira os dados solicitados</p>
                 <div class="formulario" id="fisica">
                     <div class="input-group flex-nowrap inputs">
                         <div class="align-self-center ms-3 me-3">
                             <img src="assets/nome.png" alt="" srcset="">
                         </div>
-                        <input type="text" class="form-control insert" id="usernamefis" placeholder="Nome" aria-label="Username" aria-describedby="addon-wrapping" required>
+                        <input type="text" class="form-control insert" name = "userfis" id="usernamefis" placeholder="Nome" aria-label="Username" aria-describedby="addon-wrapping" >
                     </div>
                     <div class="input-group flex-nowrap inputs">
                         <div  class="align-self-center ms-3 me-3">
                             <img src="assets/cpf.png" alt="" srcset="">
                         </div>
-                        <input type="text" class="form-control insert" id="cpf" placeholder="CPF" aria-label="CPF" aria-describedby="addon-wrapping"required>
+                        <input type="text" class="form-control insert" name = "cpf" id="cpf" placeholder="CPF" aria-label="CPF" aria-describedby="addon-wrapping">
                     </div>
                     <div class="input-group flex-nowrap inputs" data-bs-toggle="tooltip" data-bs-title="Sua senha deve conter 8-20 caracteres, letras, números e caracteres especiais." data-bs-trigger="focus" >
                         <div  class="align-self-center ms-3 me-3">
                             <img src="assets/cadeado_cinza.png" alt="" srcset="">
                         </div>
-                        <input type="password" class="form-control insert" id="senhafis"  placeholder="Senha" aria-label="Senha" aria-describedby="addon-wrapping"required>
+                        <input type="password" class="form-control insert" id="senhafis" name= "senhafis"  placeholder="Senha" aria-label="Senha" aria-describedby="addon-wrapping">
                         <div class="align-self-center ms-3 me-3" >
                             <img src="assets/olho_cinza.png" onclick="MostrarOcultarSenhaFis()" alt="" srcset="">
                         </div>
@@ -71,27 +72,27 @@
                     </div>
                     <div class="mt-4">
                         <!-- <button class="btn btn-outline-primary botao" id="btn_secundario" type = “reset”>Cancelar</button> -->
-                        <button class="btn botao" id="btn_primario" type="submit" onclick="Progresso2()">Gerar</button>
+                        <button class="btn botao" id="btn_primario" type="submit" onclick="Progresso2()"> Gerar </button>
                     </div>
-                </div>    
+                </div>
                 <div class="formulario" id="juridica">
                     <div class="input-group flex-nowrap inputs">
                         <div class="align-self-center ms-3 me-3">
                             <img src="assets/nome.png" alt="" srcset="">
                         </div>
-                        <input type="text" class="form-control insert" id="usernamejuri" placeholder="Nome" aria-label="Username" aria-describedby="addon-wrapping" required>
+                        <input type="text" class="form-control insert" name = "userjuri" id="usernamejuri" placeholder="Nome" aria-label="Username" aria-describedby="addon-wrapping" >
                     </div>
                     <div class="input-group flex-nowrap inputs">
                         <div  class="align-self-center ms-3 me-3">
                             <img src="assets/cpf.png" alt="" srcset="">
                         </div>
-                        <input type="text" class="form-control insert" id="cnpj" placeholder="CNPJ" aria-label="CNPJ" aria-describedby="addon-wrapping" required>
+                        <input type="text" class="form-control insert" name = "cnpj" id="cnpj" placeholder="CNPJ" aria-label="CNPJ" aria-describedby="addon-wrapping" >
                     </div>
                     <div class="input-group flex-nowrap inputs" data-bs-toggle="tooltip" data-bs-title="Sua senha deve conter 8-20 caracteres, letras, números e caracteres especiais." data-bs-trigger="focus" >
                         <div  class="align-self-center ms-3 me-3">
                             <img src="assets/cadeado_cinza.png" alt="" srcset="">
                         </div>
-                        <input type="password" class="form-control insert" id="senhajuri"  placeholder="Senha" aria-label="Username" aria-describedby="addon-wrapping"required>
+                        <input type="password" class="form-control insert" name = "senhajuri" id="senhajuri"  placeholder="Senha" aria-label="Username" aria-describedby="addon-wrapping">
                         <div class="align-self-center ms-3 me-3" >
                             <img src="assets/olho_cinza.png" onclick="MostrarOcultarSenhaJuri()" alt="" srcset="">
                         </div>
@@ -101,8 +102,9 @@
                         <!-- <button class="btn btn-outline-primary botao" id="btn_secundario" type = “reset”>Cancelar</button> -->
                         <button class="btn botao" id="btn_primario" type="submit" onclick="Progresso2()" onclick="UpdateProgressBar()">Gerar</button>
                     </div>
+              
                 </div> 
-            </form>
+        
         </div>
     </section>
 

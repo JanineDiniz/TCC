@@ -30,6 +30,7 @@ SET time_zone = "+00:00";
 
 DROP TABLE IF EXISTS `tbcertificado`;
 CREATE TABLE IF NOT EXISTS `tbcertificado` (
+  `certificadoid` int AUTO_INCREMENT,
   `padrao` varchar(20) NOT NULL,
   `nome` varchar(100) NOT NULL,
   `cpf` char(9),
@@ -37,7 +38,8 @@ CREATE TABLE IF NOT EXISTS `tbcertificado` (
   `senha` varchar(45) NOT NULL,
   `data_emissao` date,
   `data_validade` date,
-  PRIMARY KEY (`cpf`,`cnpj`)
+  `certificadopdf` mediumblob,
+  PRIMARY KEY (`certificadoid`,`cpf`,`cnpj`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------

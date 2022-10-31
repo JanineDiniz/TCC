@@ -3,7 +3,7 @@ include('conectbd.php');
 
 if(!empty($_POST['username']) && !empty($_POST['email']) && !empty($_POST['cellphone']) && !empty($_POST['senha']) && !empty($_POST['confsenha'])){
     
-    $username = $_POST['username'];
+    $username = strtolower($_POST['username']);
     $email = $_POST['email'];
     $telefone = $_POST['cellphone'];
     $pass = $_POST['senha'];

@@ -19,9 +19,14 @@
 <body>
     <?php
         include "menu.html";
+        $user = strtolower($_SESSION['user']);
+        $stmt = $pdo->prepare("SELECT nome, data_emissao, data_validade, LAST_VALUE(data_emissao) OVER 
+        (PARTITION BY data_emissao ORDER BY data_emissao ASC) AS emissao FROM tbcertificado where nome = '$user'");	
+        $stmt ->execute();
+        $row = $stmt->fetch((PDO::FETCH_BOTH));
     ?>
     <div class="container mt-4">
-        <h1>Bem-vindo(a) <?php echo"$_SESSION[user]" ?></h1>
+        <h1>Bem-vindo(a) <?php echo ucfirst("$_SESSION[user]") ?></h1>
         <hr class="mt-4">
         <div class="mt-5" id="atividades">
             <p id="titulo">Atividade</p>
@@ -35,9 +40,19 @@
                         </div>
                         <div class="col-5 content-block d-flex flex-column">
                             <!-- <img src="assets/InsertImg.svg" alt="" srcset=""> -->
-                            <p class="dados">Nome do Titular</p>    
-                            <p class="dados datas" id="emissao">Data de Emissão: </p> 
-                            <p class="dados datas" id="validade">Data de Validade: </p> 
+                            <?php
+                                if($row >= 1) {
+                                    echo ucfirst("$row[0]");
+                                    echo "<p class='dados datas' id='emissao'> $row[1] </p>";
+                                    echo "<p class='dados datas' id='validade'> $row[2] </p>";
+                                }
+                                else {
+                                    echo "<p class='dados'>Titular: </p>   ";
+                                    echo "<p class='dados datas' id='emissao'>Data de emissão: </p>";
+                                    echo "<p class='dados datas' id='validade'>Data de validade: </p>";
+                                }
+                            ?>
+                            
                         </div>
                         <div class="col-3">
                             

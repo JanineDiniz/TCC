@@ -40,7 +40,7 @@
                         <button type='button' id='botao_editar' class='but-edi' onclick='editar_registro()'> Editar </button>
                         <button type='button' id='botao_salvar' class='but-edi'> Salvar </button>
                         </li>
-                        <li id='valor_nome' class="list-group-item m-2 d-inline"> Nome: <h1 class="d-inline info-usu"> <?php echo"$_SESSION[user]"?></h1>
+                        <li id='valor_nome' class="list-group-item m-2 d-inline"> Nome: <h1 class="d-inline info-usu"> <?php echo ucfirst("$_SESSION[user]")?></h1>
                         <button type='button' id='botao_editar' class='but-edi' onclick='editar_registro()'> Editar </button>
                         <button type='button' id='botao_salvar' class='but-edi'> Salvar </button>
                         </li>
