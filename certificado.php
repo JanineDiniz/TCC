@@ -44,21 +44,20 @@
                         </select>
                     </div>
                 </div>
-            </form>
-            <form novalidate action="salvar-certificado.php" method="post" >
+            <form action="salvar-certificado.php" method="post" >
                 <p class="mt-5 mb-2 instrucao" id="pform">Insira os dados solicitados</p>
                 <div class="formulario" id="fisica">
                     <div class="input-group flex-nowrap inputs">
                         <div class="align-self-center ms-3 me-3">
                             <img src="assets/nome.png" alt="" srcset="">
                         </div>
-                        <input type="text" class="form-control insert" name = "userfis" id="usernamefis" placeholder="Nome" aria-label="Username" aria-describedby="addon-wrapping" >
+                        <input type="text" class="form-control insert" name = "userfis" id="usernamefis" placeholder="Nome" aria-label="Username" aria-describedby="addon-wrapping" required>
                     </div>
                     <div class="input-group flex-nowrap inputs">
                         <div  class="align-self-center ms-3 me-3">
                             <img src="assets/cpf.png" alt="" srcset="">
                         </div>
-                        <input type="text" class="form-control insert" name = "cpf" id="cpf" placeholder="CPF" aria-label="CPF" aria-describedby="addon-wrapping">
+                        <input type="text" class="form-control insert" name = "cpf" id="cpf" placeholder="CPF" aria-label="CPF" aria-describedby="addon-wrapping" required>
                     </div>
                     <div class="input-group flex-nowrap inputs" data-bs-toggle="tooltip" data-bs-title="Sua senha deve conter 8-20 caracteres, letras, números e caracteres especiais." data-bs-trigger="focus" >
                         <div  class="align-self-center ms-3 me-3">
@@ -86,25 +85,25 @@
                         <div  class="align-self-center ms-3 me-3">
                             <img src="assets/cpf.png" alt="" srcset="">
                         </div>
-                        <input type="text" class="form-control insert" name = "cnpj" id="cnpj" placeholder="CNPJ" aria-label="CNPJ" aria-describedby="addon-wrapping" >
+                        <input type="text" class="form-control insert" name = "cnpj" id="cnpj" placeholder="CNPJ" aria-label="CNPJ" aria-describedby="addon-wrapping" required>
                     </div>
                     <div class="input-group flex-nowrap inputs" data-bs-toggle="tooltip" data-bs-title="Sua senha deve conter 8-20 caracteres, letras, números e caracteres especiais." data-bs-trigger="focus" >
                         <div  class="align-self-center ms-3 me-3">
                             <img src="assets/cadeado_cinza.png" alt="" srcset="">
                         </div>
-                        <input type="password" class="form-control insert" name = "senhajuri" id="senhajuri"  placeholder="Senha" aria-label="Username" aria-describedby="addon-wrapping">
+                        <input type="password" class="form-control insert" name = "senhajuri" id="senhajuri"  placeholder="Senha" aria-label="Username" aria-describedby="addon-wrapping" required>
                         <div class="align-self-center ms-3 me-3" >
                             <img src="assets/olho_cinza.png" onclick="MostrarOcultarSenhaJuri()" alt="" srcset="">
                         </div>
     
                     </div>
                     <div class="mt-4">
-                        <!-- <button class="btn btn-outline-primary botao" id="btn_secundario" type = “reset”>Cancelar</button> -->
+                        <!-- <button class="btn btn-outline-primary botao" id="btn_secundario" type = “reset”>Cancelar</button>  -->
                         <button class="btn botao" id="btn_primario" type="submit" onclick="Progresso2()" onclick="UpdateProgressBar()">Gerar</button>
                     </div>
               
                 </div> 
-        
+            </form>
         </div>
     </section>
 
