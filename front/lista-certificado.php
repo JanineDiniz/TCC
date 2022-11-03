@@ -29,9 +29,9 @@ include "verificar-login.php";
             </div>
             <div class='shadow mb-5'  id='atividades'>
             <?php
-            $user = strtolower($_SESSION['user']);
+            $user = $_SESSION['cpf'];
            
-            $stmt = $pdo->prepare("select * from tbcertificado where nome = '$user'");	
+            $stmt = $pdo->prepare("select * from tbcertificado where cpf = '$user'");	
             $stmt ->execute();
             while($row = $stmt ->fetch(PDO::FETCH_BOTH)){
             echo"
@@ -42,15 +42,15 @@ include "verificar-login.php";
                     <div class='col-5 content-block '>
                         <p class='dados'>Nome do Titular: ". ucfirst($row[2]) ."</p>
                         <p class='dados'>Padrão: ". ucfirst($row[1]) ."</p>    
-                        <p class='dados datas' id='emissao'>Data de Emissão: ". $row[6] ."</p> 
-                        <p class='dados datas' id='validade'>Data de Validade: ". $row[7] ."</p> 
+                        <p class='dados datas' id='emissao'>Data de Emissão: ". $row[5] ."</p> 
+                        <p class='dados datas' id='validade'>Data de Validade: ". $row[6] ."</p> 
                     </div>
                     <div class='col-3'>
                         
                     </div>
                     <div class='col-3 content-block d-flex flex-column' id='baixar_direita'>
                         <div id='baixar' class=''>
-                            <a href='#'>Download</a>
+                            <a href='../aws/request_api_ps.php?nome=$row[2]&cpf=$row[3]&senha=$row[4]'>Download</a>
                             <a href='excluir-cert.php?id=$row[0]'>- Excluir</a>
                         </div>
                     </div>
