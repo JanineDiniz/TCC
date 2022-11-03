@@ -20,6 +20,7 @@ if($check[0] >= 1) {
     $_SESSION['user'] = $check[1];
     $_SESSION['email'] = $check[2];
     $_SESSION['telefone'] = $check[3];
+    $_SESSION['cpf'] = $check[4];
     header('location:home_cliente.php');
     exit();
 } else {
