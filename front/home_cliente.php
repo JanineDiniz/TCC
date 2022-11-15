@@ -18,7 +18,7 @@
 </head>
 <body>
     <?php
-        include "menu.html";
+        include "menu.php";
         $user = strtolower($_SESSION['user']);
         $stmt = $pdo->prepare("SELECT nome, data_emissao, data_validade, LAST_VALUE(data_emissao) OVER 
         (PARTITION BY data_emissao ORDER BY data_emissao ASC) AS emissao FROM tbcertificado where nome = '$user'");	

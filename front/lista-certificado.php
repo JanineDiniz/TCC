@@ -17,7 +17,7 @@ include "verificar-login.php";
 </head>
 <body>
     <?php
-        include "menu.html";
+        include "menu.php";
         
     ?>
     <section id="assinatura">

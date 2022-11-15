@@ -17,7 +17,7 @@
 </head>
 <body>
     <?php
-        include "menu.html";
+        include "menu.php";
         ?>
     <section id="assinatura">
         <div class="container pt-md-0 pt-5 pb-0" >

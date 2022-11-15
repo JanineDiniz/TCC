@@ -2,7 +2,7 @@
  <div id="header" class="sticky-top">
     <div class="container p-0 ">
         <nav class="navbar navbar-expand-md ">
-            <a class="navbar-brand" href="#" >
+            <a class="navbar-brand" href="home_cliente.php" >
                 <img src="assets/logo.png" alt="Logo" srcset="" class="img-fluid" width="189px">
             </a>
             <button class="navbar-toggler" id="btn_menu_close" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -51,12 +51,12 @@
                                         </div>
                                         <div class="ms-2 me-3">          
                                             <p class="mb-0" id="text-usu">
-                                                Usuário 
+                                                <?php echo substr(ucfirst("$_SESSION[user]"), 0, 8)?>
                                             </p>
                                             <p class="perfil-text m-0" >
-                                                Exemplo@gmail.com
+                                                <?php echo ucfirst("$_SESSION[email]")?>
                                             </p>
-                                            <a href="home_cliente.php"class="gerenc-perfil" href="login.html">
+                                            <a href="usuario.php"class="gerenc-perfil" href="login.html">
                                                 <p class="perfil-text m-0 "> 
                                                 Gerencial perfil
                                                 </p>

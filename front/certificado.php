@@ -17,7 +17,7 @@
 <body onload="EsconderForm()">
 
     <?php
-        include "menu.html";
+        include "menu.php";
 
     ?>
     <section>

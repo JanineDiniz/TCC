@@ -17,6 +17,7 @@ $result->execute();
 $check = $result->fetch(PDO::FETCH_BOTH);
 print_r($check);
 if($check[0] >= 1) {
+    $_SESSION['userid'] = $check[0];
     $_SESSION['user'] = $check[1];
     $_SESSION['email'] = $check[2];
     $_SESSION['telefone'] = $check[3];
