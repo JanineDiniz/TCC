@@ -1,4 +1,10 @@
  <!--//HEADER-->
+ <?php
+$id = $_SESSION['userid'];
+$stmt = $pdo->prepare("select * from tbusuario where userid = '$id'");	
+$stmt ->execute();
+$row = $stmt ->fetch(PDO::FETCH_BOTH);
+ ?>
  <div id="header" class="sticky-top">
     <div class="container p-0 ">
         <nav class="navbar navbar-expand-md ">
@@ -51,10 +57,10 @@
                                         </div>
                                         <div class="ms-2 me-3">          
                                             <p class="mb-0" id="text-usu">
-                                                <?php echo substr(ucfirst("$_SESSION[user]"), 0, 8)?>
+                                                <?php echo substr(ucfirst("$row[1]"), 0, 8)?>
                                             </p>
                                             <p class="perfil-text m-0" >
-                                                <?php echo ucfirst("$_SESSION[email]")?>
+                                                <?php echo ucfirst("$row[2]")?>
                                             </p>
                                             <a href="usuario.php"class="gerenc-perfil" href="login.html">
                                                 <p class="perfil-text m-0 "> 

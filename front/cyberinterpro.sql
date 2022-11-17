@@ -6,7 +6,8 @@
 -- Tempo de geração: 03-Nov-2022 às 14:25
 -- Versão do servidor: 5.7.36
 -- versão do PHP: 7.4.26
-
+create database cyberinterpro;
+use cyberinterpro;
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
 SET time_zone = "+00:00";
