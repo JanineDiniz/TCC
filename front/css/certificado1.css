@@ -18,9 +18,7 @@ body{
 .titulo{
     text-align: center;
 }
-#pform{
-    display: block;
-}
+
 .instrucao{
     color: rgb(0, 0, 0);
     font-weight: bolder;
@@ -64,6 +62,11 @@ body{
     color: var(--azul_escuro_dg_claro);
     border: 1px solid var(--azul_escuro_dg_claro);
 }
-#fisica{
-    display: none;
+#esconder{
+    /* display: none; */
+    display: block;
+}
+#pform{
+    /* display: none; */
+    display: block;
 }

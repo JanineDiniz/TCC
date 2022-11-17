@@ -1,6 +1,9 @@
 <?php
     include('verificar-login.php');
+<<<<<<< HEAD
     include('conectbd.php')
+=======
+>>>>>>> 322ab938b7863f6556f5665be7f528e7bc5366f9
 ?>
 
 <!DOCTYPE html>
