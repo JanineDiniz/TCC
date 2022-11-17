@@ -4,11 +4,11 @@ import path from "node:path";
 
 async function main() {
   const originalPdfName = "Array";       //VEM DO FRONT
-  const certificateName = "keystore";    //VEM DO FRONT
+  const certificateName = "userpfx";    //VEM DO FRONT
 
   const pdfBuffer = new SignPDF(
     path.resolve('./tcc/pdf/' + originalPdfName),
-    path.resolve('assets/' + certificateName + '.p12')
+    path.resolve('./tcc/certificado/' + certificateName + '.pfx')
   );
 
   const signedDocs = await pdfBuffer.signPDF();

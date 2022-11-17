@@ -27,6 +27,9 @@ SET time_zone = "+00:00";
 -- Estrutura da tabela `tbcertificado`
 --
 
+CREATE DATABASE cyberinterpro;
+use cyberinterpro;
+
 DROP TABLE IF EXISTS `tbcertificado`;
 CREATE TABLE IF NOT EXISTS `tbcertificado` (
   `certificadoid` int(11) NOT NULL AUTO_INCREMENT,

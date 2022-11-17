@@ -34,17 +34,12 @@
                         ?>
                 </div>
                 <div class="col-md-12 col-sm-12 align-self-center" id="esc-arquivo">
-                    <form action="test.php" method="post" enctype="multipart/form-data">
-                        <input type="file" class="form-control mb-3 pdf" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" accept=".pdf" name="pdf">
-                        <h5 class="pdf_text ms-2"> Escolha somente arquivos com extensão .pdf </h5>
-                        <input type="submit" value="Validar PDF" name="submit" class="but_pdf btn btn-primary"> 
+                    <form action="certificado-applyer.php" method="post" enctype="multipart/form-data">
+                        <input type="file" class="form-control mb-3 pdf" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" accept=".pfx" name="userfile">
+                        <h5 class="pdf_text ms-2"> Escolha somente arquivos com extensão .pfx </h5>
+                        <input type="submit" value="Assinar Documento" name="submit" class="but_pdf btn btn-primary"> 
+                        <br><br><br><br><br><br><br><br><br><br><br><br>
                     </form>
-                </div>
-                <div class="col-md-12 col-sm-12 align-self-center mt-2 mb-5">
-                    <iframe src="pdf/Array" width="100%" height="700" class="pdf_viewer">
-                        </iframe>
-                    </div>
-                    <a href="inserir-certificado.php">Próximo</a>
                 </div>
             </div>
         </section>
