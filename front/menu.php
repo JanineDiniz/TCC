@@ -9,7 +9,7 @@ $row = $stmt ->fetch(PDO::FETCH_BOTH);
     <div class="container p-0 ">
         <nav class="navbar navbar-expand-md ">
             <a class="navbar-brand" href="home_cliente.php" >
-                <img src="assets/logo.png" alt="Logo" srcset="" class="img-fluid" width="189px">
+                <img src="assets/logo/2 colors full.png" alt="Logo" srcset="" class="img-fluid" width="189px">
             </a>
             <button class="navbar-toggler" id="btn_menu_close" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
