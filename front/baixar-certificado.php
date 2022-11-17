@@ -14,7 +14,7 @@
     <script src="JS/bootstrap.min.js"></script>
     <script src="pdf/mostrarpdf.js"></script>
     <script src="pdf/pdf.js"></script>
-    <title> Inserir Certificado </title>
+    <title> Baixar Certificado </title>
     <script src="https://unpkg.com/pdf-lib@1.4.0"></script>
     <script src="https://unpkg.com/downloadjs@1.4.7"></script>
 </head>
@@ -34,12 +34,7 @@
                         ?>
                 </div>
                 <div class="col-md-12 col-sm-12 align-self-center" id="esc-arquivo">
-                    <form action="certificado-applyer.php" method="post" enctype="multipart/form-data">
-                        <input type="file" class="form-control mb-3 pdf" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" accept=".p12" name="userfile">
-                        <h5 class="pdf_text ms-2"> Escolha somente arquivos com extensão .p12 </h5>
-                        <input type="submit" value="Assinar Documento" name="submit" class="but_pdf btn btn-primary"> 
-                        <br><br><br><br><br><br><br><br><br><br><br><br>
-                    </form>
+                    <a href="exports/pdfAssinado.pdf" target="_blank">Aqui está seu arquivo!</a>
                 </div>
             </div>
         </section>

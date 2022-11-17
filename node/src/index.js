@@ -4,15 +4,15 @@ import path from "node:path";
 
 async function main() {
   const originalPdfName = "Array";       //VEM DO FRONT
-  const certificateName = "userpfx";    //VEM DO FRONT
+  const certificateName = "keystore";    //VEM DO FRONT
 
   const pdfBuffer = new SignPDF(
-    path.resolve('./tcc/pdf/' + originalPdfName),
-    path.resolve('./tcc/certificado/' + certificateName + '.pfx')
+    path.resolve('../front/pdf/' + originalPdfName),
+    path.resolve('../front/certificado/' + certificateName + '.p12')
   );
 
   const signedDocs = await pdfBuffer.signPDF();
-  const pdfName = `./exports/pdfAssinado.pdf`;
+  const pdfName = `../front/exports/pdfAssinado.pdf`;
   // const randomNumber = Math.floor(Math.random() * 5000);
   // const pdfName = `./exports/pdfassinadoNum${randomNumber}.pdf`;
 

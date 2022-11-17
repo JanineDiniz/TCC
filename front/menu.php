@@ -1,9 +1,9 @@
  <!--//HEADER-->
  <?php
-$id = $_SESSION['userid'];
-$stmt = $pdo->prepare("select * from tbusuario where userid = '$id'");	
-$stmt ->execute();
-$row = $stmt ->fetch(PDO::FETCH_BOTH);
+// $id = $_SESSION['userid'];
+// $stmt = $pdo->prepare("select * from tbusuario where userid = '$id'");	
+// $stmt ->execute();
+// $row = $stmt ->fetch(PDO::FETCH_BOTH);
  ?>
  <div id="header" class="sticky-top">
     <div class="container p-0 ">
