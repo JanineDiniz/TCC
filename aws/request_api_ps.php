@@ -9,6 +9,7 @@
 	<body>
 	
 		<?php
+
 			if(isset($_GET['nome']))
 			{
 				$name=$_GET['nome'];
@@ -22,7 +23,6 @@
 				fwrite($fpcpf, $cpf);
 				fclose($fpcpf);
 				
-				
 				$senha=$_GET['senha'];
 				$fpsenha = fopen('senha.txt', 'w');
 				fwrite($fpsenha, $senha);
@@ -30,7 +30,7 @@
 			}
 		
 			echo "<pre>";
-			$response = Shell_Exec('powershell -InputFormat none -ExecutionPolicy ByPass -NoProfile -Command "& { . \"C:\wamp642\www\cyberinterpro\aws\test.ps1\"; }"');
+			$response = Shell_Exec('powershell -InputFormat none -ExecutionPolicy ByPass -NoProfile -Command "& { . \"C:\xampp\htdocs\cyberinterpro\aws\test.ps1\"; }"');
 			echo $response;
 			echo "</pre>";
 			

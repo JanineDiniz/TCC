@@ -1,5 +1,5 @@
 <?php
-// include('verificar-login.php');
+    include('verificar-login.php');
 ?>
 
 <!DOCTYPE html>
@@ -20,7 +20,7 @@
         include "menu.php";
 
     ?>
-    <section>
+    <section class="mb-5">
         <div class="mt-5">
             <h1 class="titulo">Geração de Certificado</h1>
             <?php
@@ -30,7 +30,7 @@
         </div>
         <div class="container text-center">
         
-            <form>
+            <form action="salvar-certificado.php" method="post">
                 <p class="mb-2 mt-2 instrucao">Escolha o tipo de Certificado que deseja emitir</p>
                 <div class="formulario" id="selecionar">
                     <div class="input-group flex-nowrap inputs">
@@ -39,15 +39,17 @@
                         </div>
                         <select name="tipo_cert" class="form-select insert" id="tipo" aria-label="Default select example" onchange="TrocarForm(this.value)">
                             <option value="0" disabled selected>Tipo do Certificado</option>
-                            <option value="1">Pessoa Jurídica</option>
-                            <option value="2">Pessoa Física</option>
+                            <option value="juridico">Pessoa Jurídica</option>
+                            <option value="fisico">Pessoa Física</option>
                         </select>
                     </div>
                 </div>
             </form>
-            <form action="salvar-certificado.php" method="post" novalidate>
+        </div>    
+        <div class="container text-center">
+            <form action="salvar-certificado.php"  method="post" novalidate>
                 <p class="mt-5 mb-2 instrucao" id="pform">Insira os dados solicitados</p>
-                <div class="formulario" id="fisica">
+                <!-- <div class="formulario" id="fisica">
                     <div class="input-group flex-nowrap inputs">
                         <div class="align-self-center ms-3 me-3">
                             <img src="assets/nome.png" alt="" srcset="">
@@ -64,29 +66,29 @@
                         <div  class="align-self-center ms-3 me-3">
                             <img src="assets/cadeado_cinza.png" alt="" srcset="">
                         </div>
-                        <input type="password" class="form-control insert" id="senha" name= "senhafis"  placeholder="Senha" aria-label="Senha" aria-describedby="addon-wrapping">
+                        <input type="password" class="form-control insert" id="senhafis" name= "senha"  placeholder="Senha" aria-label="Senha" aria-describedby="addon-wrapping" required>
                         <div class="align-self-center ms-3 me-3" >
                             <img src="assets/olho_cinza.png" onclick="MostrarOcultarSenhaFis()" alt="" srcset="">
                         </div>
     
                     </div>
                     <div class="mt-4">
-                        <!-- <button class="btn btn-outline-primary botao" id="btn_secundario" type = “reset”>Cancelar</button> -->
+                         <button class="btn btn-outline-primary botao" id="btn_secundario" type = “reset”>Cancelar</button>
                         <button class="btn botao" id="btn_primario" type="submit" onclick="Progresso2()"> Gerar </button>
                     </div>
-                </div>
+                </div> -->
                 <div class="formulario" id="juridica">
                     <div class="input-group flex-nowrap inputs">
                         <div class="align-self-center ms-3 me-3">
                             <img src="assets/nome.png" alt="" srcset="">
                         </div>
-                        <input type="text" class="form-control insert" name = "nome" id="usernamejuri" placeholder="Nome" aria-label="Username" aria-describedby="addon-wrapping" >
+                        <input type="text" class="form-control insert" name = "nome" id="usernamejuri" placeholder="Nome ou Razão Social" aria-label="Username" aria-describedby="addon-wrapping" required>
                     </div>
                     <div class="input-group flex-nowrap inputs">
                         <div  class="align-self-center ms-3 me-3">
                             <img src="assets/cpf.png" alt="" srcset="">
                         </div>
-                        <input type="text" class="form-control insert" name = "cpf" id="cnpj" placeholder="CNPJ" aria-label="CNPJ" aria-describedby="addon-wrapping" required>
+                        <input type="text" class="form-control insert" name = "cpf" id="cnpj" placeholder="CPF ou CNPJ (somente números)" aria-label="CNPJ" aria-describedby="addon-wrapping" required>
                     </div>
                     <div class="input-group flex-nowrap inputs" data-bs-toggle="tooltip" data-bs-title="Sua senha deve conter 8-20 caracteres, letras, números e caracteres especiais." data-bs-trigger="focus" >
                         <div  class="align-self-center ms-3 me-3">
@@ -102,11 +104,15 @@
                         <!-- <button class="btn btn-outline-primary botao" id="btn_secundario" type = “reset”>Cancelar</button>  -->
                         <button class="btn botao" id="btn_primario" type="submit" onclick="Progresso2()" onclick="UpdateProgressBar()">Gerar</button>
                     </div>
-              
                 </div> 
+                
             </form>
         </div>
     </section>
+
+    <?php
+        // include "footer.html";
+    ?>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
     <script src="JS/bootstrap.min.js"></script>
