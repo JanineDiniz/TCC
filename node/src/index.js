@@ -4,7 +4,7 @@ import path from "node:path";
 
 async function main() {
   const originalPdfName = "Array";       //VEM DO FRONT
-  const certificateName = "keystore";    //VEM DO FRONT
+  const certificateName = "userp12";    //VEM DO FRONT
 
   const pdfBuffer = new SignPDF(
     path.resolve('../front/pdf/' + originalPdfName),
