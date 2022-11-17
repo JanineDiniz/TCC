@@ -29,9 +29,9 @@ include "verificar-login.php";
             </div>
             <div class='shadow mb-5'  id='atividades'>
             <?php
-            $user = $_SESSION['cpf'];
+            $cpf = $_SESSION['cpf'];
            
-            $stmt = $pdo->prepare("select * from tbcertificado where cpf = '$user'");	
+            $stmt = $pdo->prepare("select * from tbcertificado where cpf = '$cpf'");	
             $stmt ->execute();
             while($row = $stmt ->fetch(PDO::FETCH_BOTH)){
             echo"

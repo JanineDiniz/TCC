@@ -1,5 +1,6 @@
 <?php
     include('verificar-login.php');
+    include('conectbd.php');
 ?>
 
 <!DOCTYPE html>

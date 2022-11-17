@@ -37,6 +37,13 @@
                 <div class="col-md-11 col-sm-11 info shadow p-2 mb-5 bg-body rounded" id="info-basico">
                     <h3 class="titulo2 d-inline-flex ms-2">Informações Básicas</h3>
                     <table class="info-text list-group">
+                        <?php
+
+                             $id = $_SESSION['userid'];
+                             $stmt = $pdo->prepare("select * from tbusuario where userid = '$id'");	
+                             $stmt ->execute();
+                             $row = $stmt ->fetch(PDO::FETCH_BOTH);
+                        ?>
                         <tr class="list-group-item m-2 rounded">
                             <td class="pt-2 pb-2">
                                 Id:
@@ -64,7 +71,7 @@
                                 Nome:
                             </td>
                             <td class="td_info" >
-                                <h1  class="d-inline info-usu" id='valor_nome'> <?php echo ucfirst("$_SESSION[user]")?></h1>
+                                <h1  class="d-inline info-usu" id='valor_nome'> <?php echo ucfirst("$row[1]")?></h1>
                             </td>
                             <td class="td_but">
                                 <button type='button' id='botao_editar1' class='but-edi' onclick='editar_registro1("<?php echo "$_SESSION[userid]"?>")'> Editar </button>
@@ -76,7 +83,7 @@
                                 CPF:
                             </td>
                             <td class="td_info">
-                                <h1 class="d-inline info-usu" id='valor_cpf'> <?php echo ucfirst("$_SESSION[cpf]")?> </h1>
+                                <h1 class="d-inline info-usu" id='valor_cpf'> <?php echo ucfirst("$row[4]")?> </h1>
                             </td>
                             <td class="td_but">
                                 <button type='button' id='botao_editar2' class='but-edi ' onclick='editar_registro2("<?php echo "$_SESSION[userid]"?>")'> Editar </button>
@@ -94,7 +101,7 @@
                                 Email: 
                             </td>
                             <td class="td_info">
-                                <h1 class="d-inline info-usu" id="valor_email"><?php echo"$_SESSION[email]"?></h1>
+                                <h1 class="d-inline info-usu" id="valor_email"><?php echo"$row[2]"?></h1>
                             </td>
                             <td class="td_but">
                                 <button type='button' id='botao_editar3' class='but-edi ' onclick='editar_registro3("<?php echo "$_SESSION[userid]"?>")'> Editar </button>
@@ -106,7 +113,7 @@
                                 Telefone:
                             </td>
                             <td class="td_info">
-                                <h1 class="d-inline info-usu" id="valor_tel"><?php echo"$_SESSION[telefone]"?></h1>
+                                <h1 class="d-inline info-usu" id="valor_tel"><?php echo"$row[3]"?></h1>
                             </td>
                             <td class="td_but">
                                 <button type='button' id='botao_editar4' class='but-edi ' onclick='editar_registro4("<?php echo "$_SESSION[userid]"?>")'> Editar </button>
