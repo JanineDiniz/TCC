@@ -20,6 +20,7 @@
 </head>
 <body>
     <?php
+        include "conectbd.php";
         include "menu.php";
         ?>
     <section id="assinatura">
@@ -34,7 +35,8 @@
                         ?>
                 </div>
                 <div class="col-md-12 col-sm-12 align-self-center" id="esc-arquivo">
-                    <a href="exports/pdfAssinado.pdf" target="_blank">Aqui está seu arquivo!</a>
+                    <a href="exports/pdfAssinado.pdf" class='btn btn-primary rounded-pill entrar_text  d-md-inline-block d-flex flex-sm-column btn_land mb-md-0 mb-2 me-md-2' target="_blank">Aqui está seu arquivo!</a>
+                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> <!-- FRONTEND ARRUME! !-->
                 </div>
             </div>
         </section>
