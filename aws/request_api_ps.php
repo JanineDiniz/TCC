@@ -58,11 +58,10 @@
 			<div id="centralizar"  >	
 				<p class="" id="frase1">Seu Certificado Digital foi gerado com <span>sucesso!</span></p>
 				<p class="" id="frase2">Clique abaixo e faça o download do certificado e da cadeia.</p>
-				
-				<a href="cadastro.html" class="btn btn-primary rounded-pill entrar_text  d-md-inline-block d-flex flex-sm-column btn_land mb-md-0 mb-2 me-md-2" id="btn_cad">Cadastre-se</a>
-                <a href="login.html" class="btn btn-primary rounded-pill entrar_text  d-md-inline-block d-flex flex-sm-column btn_land" id="btn_cad">Entrar</a>
-
-			</div>
+				<?php 
+				echo "<a href='http://localhost/cyberinterpro/aws/files/$filename ' class='btn btn-primary rounded-pill entrar_text  d-md-inline-block d-flex flex-sm-column btn_land mb-md-0 mb-2 me-md-2'>Baixar</a>"
+				?>
+				</div>
 		</div>
 	</section>
 	<!-- <?php
