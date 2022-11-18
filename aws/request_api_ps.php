@@ -8,13 +8,15 @@
 		<link rel="stylesheet" href="../front/css/main1.css">
     	<link rel="stylesheet" href="css/request.css">
     	<link rel="stylesheet" href="../front/css/menu.css">
+		<link rel="stylesheet" href="../front/css/barCert.css">
+		<script src="js/request.js"></script>
 	</head>
-	<body>
+	<body onload="Step3()">
 		<?php
 		    include('../front/verificar-login.php');
 			include('../front/conectbd.php');
 			include ('../front/menu.php');
-			
+			include ('../front/ProgressBarCert.html');
 		?>
 	
 		<?php
