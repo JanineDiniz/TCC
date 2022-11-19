@@ -6,7 +6,7 @@ body, html{
 #container {
     /* background-color: red; */
     width: 100vw;
-    height: 85vh;
+    height: 50vh;
 }
 #centralizar {
     /* background-color: blue; */
@@ -20,4 +20,16 @@ body, html{
 }
 span{
     color: rgb(30, 163, 4);
+}
+#btn_down{
+    width: 9em;
+    font-size: 1.2em;
+    background-color: var(--azul_escuro_dg_claro);
+    transition: transform .6s;
+    border: 0;
+}
+#btn_down:hover{
+    background-image: linear-gradient(var(--azul_escuro_dg_claro), #2b86bb);
+    color: rgb(255, 255, 255);
+    transform: scale(1.05); 
 }

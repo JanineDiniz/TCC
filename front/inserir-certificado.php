@@ -19,7 +19,7 @@
     <script src="https://unpkg.com/pdf-lib@1.4.0"></script>
     <script src="https://unpkg.com/downloadjs@1.4.7"></script>
 </head>
-<body>
+<body onload="Progresso2()">
     <?php
         include "menu.php";
         ?>
@@ -47,6 +47,6 @@
         <?php   
         include "footer.html";
         ?>
-<script src="js/assinaturaImg.js"></script>
+<script src="js/assinatura.js"></script>
 </body>
 </html>

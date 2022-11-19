@@ -8,8 +8,9 @@
 		<link rel="stylesheet" href="../front/css/main1.css">
     	<link rel="stylesheet" href="css/request.css">
     	<link rel="stylesheet" href="../front/css/menu.css">
-		<link rel="stylesheet" href="../front/css/barCert.css">
-		<script src="js/request.js"></script>
+		<link rel="stylesheet" href="../front/css/footer.css">
+
+		<script src="../front/js/certificado.js"></script>
 	</head>
 	<body onload="Step3()">
 		<?php
